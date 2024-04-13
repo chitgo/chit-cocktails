@@ -16,7 +16,7 @@ function About() {
         <br />
 
         <div className="px-4 py-2 mt-2 mb-12 transition duration-300 border border-gray-500 bg-bgPrimary rounded-xl hover:-translate-y-1 ">
-          <Link to={'/'} className="mainColor ">
+          <Link to={'/chit-cocktails'} className="mainColor ">
             Back Home
           </Link>
         </div>

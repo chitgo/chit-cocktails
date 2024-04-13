@@ -43,7 +43,7 @@ function Cocktail() {
         <header className="mt-8 text-center">
           <Link
             className="px-4 py-2 transition duration-300 border border-gray-500  bg-[#31e0a9] text-gray-900  rounded-xl hover:-translate-y-1 font-bold"
-            to={'/'}
+            to={'/chit-cocktails'}
           >
             Back Home
           </Link>

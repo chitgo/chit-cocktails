@@ -4,12 +4,12 @@ function Error() {
   const error = useRouteError()
   if (error.status === 404) {
     return (
-      <div className="text-center h-screen">
+      <div className="h-screen text-center">
         <div className="flex flex-col items-center mt-20">
           <h3 className="text-5xl">Oops!</h3>
-          <h1 className="text-5xl mt-4">Page not found!</h1>
-          <div className="bg-bgPrimary px-4 py-2  border border-gray-500 rounded-xl  hover:-translate-y-1 transition duration-300 mt-8">
-            <Link to={'/'} className="mainColor ">
+          <h1 className="mt-4 text-5xl">Page not found!</h1>
+          <div className="px-4 py-2 mt-8 transition duration-300 border border-gray-500 bg-bgPrimary rounded-xl hover:-translate-y-1">
+            <Link to={'/chit-cocktails'} className="mainColor ">
               Back to Home
             </Link>
           </div>
@@ -19,7 +19,7 @@ function Error() {
   }
   return (
     <div>
-      <div className="bg-bgPrimary mt-2 px-4 py-2  border border-gray-500 rounded-xl  hover:-translate-y-1 transition duration-300  ">
+      <div className="px-4 py-2 mt-2 transition duration-300 border border-gray-500 bg-bgPrimary rounded-xl hover:-translate-y-1 ">
         <Link to={'/'} className="mainColor ">
           Back to Home
         </Link>

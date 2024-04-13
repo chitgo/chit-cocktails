@@ -7,3 +7,16 @@
     @apply bg-gradient-to-l bg-clip-text text-transparent from-[#e6b800] via-[#7dd4e8] to-[#31e0a9];
   }
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #423d4c inset !important;
+  -webkit-text-fill-color: rgb(255 255 255 / var(--tw-text-opacity));
+}

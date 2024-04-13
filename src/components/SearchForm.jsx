@@ -32,7 +32,7 @@ function SearchForm({ searchTerm }) {
           name="search"
           id="default-search"
           defaultValue={searchTerm}
-          className="block w-full p-4 text-white border border-gray-600 focus:ring-1 rounded-lg focus:outline-[#31e0a9] ps-10 bg-bgPrimary "
+          className="block w-full p-4 text-white border border-gray-600 focus:ring-1 rounded-lg focus:outline-[#31e0a9] ps-10   bg-bgPrimary "
           placeholder="Cocktail..."
           required
         />

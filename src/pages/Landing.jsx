@@ -14,7 +14,6 @@ export const loader = async ({ request }) => {
 
 function Landing() {
   const { drinks, searchTerm } = useLoaderData()
-  console.log(drinks)
   return (
     <>
       <SearchForm searchTerm={searchTerm} />

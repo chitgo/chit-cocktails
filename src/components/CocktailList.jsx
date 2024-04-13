@@ -23,7 +23,7 @@ function CocktailList({ drinks }) {
   })
 
   return (
-    <div className="grid gap-8 py-8 mt-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 w-[90%] max-w-7xl mx-auto  place-items-center">
+    <div className="grid gap-y-8 py-8 mt-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 w-[90%] max-w-7xl mx-auto ">
       {formatedDrinks.map((item) => {
         return <CocktailCard key={item.id} {...item} />
       })}

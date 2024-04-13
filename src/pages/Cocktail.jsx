@@ -25,17 +25,13 @@ function Cocktail() {
     strInstructions: instructions,
   } = singleDrink
 
-  console.log(singleDrink)
-
   const filteredIngredients = Object.keys(singleDrink)
     .filter((key) => key.includes('Ingredient') && singleDrink[key] !== null)
     .map((key) => singleDrink[key])
-  console.log(filteredIngredients)
 
   const filteredMeasures = Object.keys(singleDrink)
     .filter((key) => key.includes('Measure') && singleDrink[key] !== null)
     .map((key) => singleDrink[key])
-  console.log(filteredMeasures)
 
   return (
     <div className="h-screen px-12 pt-8 bg-white">

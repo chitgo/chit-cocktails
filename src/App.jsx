@@ -21,11 +21,11 @@ const router = createBrowserRouter([
         errorElement: <SinglePageError />,
       },
       {
-        path: 'about',
+        path: '/chit-cocktails/about',
         element: <About />,
       },
       {
-        path: 'cocktail/:id',
+        path: '/chit-cocktails/cocktail/:id',
         errorElement: <SinglePageError />,
         loader: singleCocktailLoader,
         element: <Cocktail />,

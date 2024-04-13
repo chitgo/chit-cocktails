@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .mainColor {
+    @apply bg-gradient-to-l bg-clip-text text-transparent from-[#e6b800] via-[#7dd4e8] to-[#31e0a9];
+  }
+}

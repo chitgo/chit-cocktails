@@ -10,7 +10,7 @@ import SinglePageError from './pages/SinglePageError'
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/*',
     element: <HomePage />,
     errorElement: <Error />,
     children: [

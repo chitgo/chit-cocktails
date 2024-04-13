@@ -3,14 +3,18 @@ import About from './pages/About'
 import Landing from './pages/Landing'
 import Error from './pages/Error'
 import Cocktail from './pages/Cocktail'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import {
+  RouterProvider,
+  createBrowserRouter,
+  createHashRouter,
+} from 'react-router-dom'
 import { loader as LandingLoader } from './pages/Landing'
 import { loader as singleCocktailLoader } from './pages/Cocktail'
 import SinglePageError from './pages/SinglePageError'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
-    path: '/chit-cocktails',
+    path: '/*',
     element: <HomePage />,
     errorElement: <Error />,
     children: [
@@ -21,11 +25,11 @@ const router = createBrowserRouter([
         errorElement: <SinglePageError />,
       },
       {
-        path: '/chit-cocktails/about',
+        path: 'about',
         element: <About />,
       },
       {
-        path: '/chit-cocktails/cocktail/:id',
+        path: 'cocktail/:id',
         errorElement: <SinglePageError />,
         loader: singleCocktailLoader,
         element: <Cocktail />,

@@ -43,7 +43,7 @@ function Cocktail() {
         <header className="mt-8 text-center">
           <Link
             className="px-4 py-2 transition duration-300 border border-gray-500  bg-[#31e0a9] text-gray-900  rounded-xl hover:-translate-y-1 font-bold"
-            to={'/chit-cocktails'}
+            to={'/'}
           >
             Back Home
           </Link>
@@ -54,7 +54,7 @@ function Cocktail() {
             <img
               src={image}
               alt={name}
-              className="object-cover object-center rounded-xl min-h-[350px]"
+              className="object-cover object-center rounded-xl min-h-[350px] max-h-[450px]"
             />
           </div>
           <div className="col-span-7 pb-12 space-y-3 sm:pb-0 sm:ml-12 sm:mt-4">
